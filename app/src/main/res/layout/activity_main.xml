@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/light_gold">
+
+    <ImageButton
+        android:id="@+id/btn_challenge"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/challenge"
+        android:scaleType="centerInside"
+        android:background="@color/light_gold"
+        android:layout_margin="10dp"
+        android:layout_gravity="right"
+        android:contentDescription="btn_challenge"/>
+
+    <FrameLayout
+        android:id="@+id/fragmentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+<!--        지도 추가-->
+    </FrameLayout>
+
+    <include layout="@layout/menu_bottomsheet"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
